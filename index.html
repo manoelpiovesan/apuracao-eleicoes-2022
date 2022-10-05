@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Resultado do Segundo Turno</title>
+</head>
+<body>
+    
+    <div class="container">
+       
+        <div class="cards">
+            <div class="card" id="card-bolsonaro">
+                <div class="card-avatar">
+                    <img src="imgs/bolsonaro.jpg" class='avatar' alt="">
+                </div>
+                <div class="card-body">
+                    <h4 id="nm-bolsonaro">Jair Messias Bolsonaro</h4>
+                    <span class="partido"><img src="imgs/pl.png"  class='partido-icon' alt=""><span id="partido-bolsonaro">Partido Liberal </span></span>
+                    <hr>
+                    <div class="info">
+                        <div id="pvap-bolsonaro" class="pvap">43.4%</div>
+                        <div class="votos-validos">
+                            <p>Votos</p>
+                            <span id="vap-bolsonaro" class="vap">12.090.944</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="card " id="card-lula">
+                <div class="card-avatar">
+                    <img src="imgs/lula.jpg" class='avatar' alt="">
+                </div>
+                <div class="card-body">
+                    <h4 id="nm-lula">Luis Inácio Lula da Silva</h4>
+                    <span class="partido"><img src="imgs/pt.webp"  class='partido-icon' alt=""><span id="partido-lula">Partido dos Trabalhadores </span></span>
+                    <hr>
+                    <div class="info">
+                        <div id="pvap-lula" class="pvap">47.6%</div>
+                        <div class="votos-validos">
+                            <p>Votos</p>
+                            <span id="vap-lula" class="vap">13.556.576</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="text-center text-light">
+            
+                <span>Atualizado no dia <span id="update-time"></span> • Atualizado <span id="update-count">0</span> vezes</span>
+           
+        </div>
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
