@@ -47,6 +47,9 @@ const Apuracao = ()=>{
         document.querySelector('#nm-bolsonaro').textContent = firstUpperCaseForEachWord(bolsonaroObj.nm.toLowerCase())
         document.querySelector('#nm-lula').textContent = firstUpperCaseForEachWord(lulaObj.nm.toLowerCase())
 
+        document.querySelector('#vice-bolsonaro').textContent = firstUpperCaseForEachWord(bolsonaroObj.nv.toLowerCase())
+        document.querySelector('#vice-lula').textContent = firstUpperCaseForEachWord(lulaObj.nv.toLowerCase())
+
         document.querySelector('#vap-bolsonaro').textContent = parseInt(bolsonaroObj.vap).toLocaleString('pt-BR')
         document.querySelector('#pvap-bolsonaro').textContent = bolsonaroObj.pvap + '%' 
 
