@@ -1,4 +1,4 @@
-const url = 'https://resultados.tse.jus.br/oficial/ele2022/544/dados-simplificados/br/br-c0001-e000544-r.json'
+const url = 'https://resultados.tse.jus.br/oficial/ele2022/545/dados-simplificados/br/br-c0001-e000545-r.json'
 
 
 function capitalizeFirstLetter(string) {
@@ -67,6 +67,11 @@ const Apuracao = ()=>{
             document.querySelector('#card-bolsonaro').classList.add('vencendo')
         }else{
             document.querySelector('#card-lula').classList.add('vencendo')
+            document.querySelector('#card-bolsonaro').classList.remove('vencendo')
+        }
+
+        if(parseFloat(bolsonaroObj.pvap) == parseFloat(lulaObj.pvap)){
+            document.querySelector('#card-lula').classList.remove('vencendo')
             document.querySelector('#card-bolsonaro').classList.remove('vencendo')
         }
 
